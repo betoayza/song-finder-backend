@@ -1,9 +1,6 @@
 import express from "express";
 import cors from "cors";
 import router from "./routes/routes.js";
-// import morgan from "morgan";
-// import * as dotenv from "dotenv";
-// dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT; // || 1234;
@@ -19,7 +16,11 @@ app.use(
 
 app.use(
   cors({
-    origin: "https://betoayza.github.io", // origin is only domain
+    origin: [
+      "https://betoayza.github.io",
+      "http://localhost:4173",
+      "http://localhost:5173",
+    ], // origin is only domain
   })
 ); // enable CORS
 
