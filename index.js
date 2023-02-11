@@ -29,6 +29,6 @@ app.use(router); // enable routes
 // app.use(morgan("dev")); // HTTP requests logs
 
 app.listen(PORT, () => {
-  console.log(PORT);
+  // console.log(PORT);
   console.log("Servidor corriendo en puerto 1234!");
 });
