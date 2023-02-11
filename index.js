@@ -17,9 +17,9 @@ app.use(
 app.use(
   cors({
     origin: [
-      "https://betoayza.github.io",
-      "http://localhost:4173",
-      "http://localhost:5173",
+      "https://betoayza.github.io", // prod
+      "http://localhost:4173", // preview
+      "http://localhost:5173", // dev
     ], // origin is only domain
   })
 ); // enable CORS
