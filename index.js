@@ -19,7 +19,7 @@ app.use(
 
 app.use(
   cors({
-    origin: "https://betoayza.github.io/song-finder/",
+    origin: "https://betoayza.github.io/",
   })
 ); // enable CORS
 
