@@ -18,15 +18,14 @@ app.use(
 );
 
 app.use(
-  cors()
-  // {
-  //     origin: "https://betoayza.github.io/song-finder/"
-  // }
+  cors({
+    origin: "https://betoayza.github.io/song-finder/",
+  })
 ); // enable CORS
 
 app.use(router); // enable routes
 
-app.use(morgan("dev")); // HTTP requests logs
+// app.use(morgan("dev")); // HTTP requests logs
 
 app.listen(PORT, () => {
   console.log(PORT);

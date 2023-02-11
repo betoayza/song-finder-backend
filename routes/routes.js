@@ -1,7 +1,7 @@
 import express from "express";
 import axios from "axios";
-// import * as dotenv from "dotenv";
-// dotenv.config();
+import * as dotenv from "dotenv";
+dotenv.config();
 
 const router = express.Router();
 
