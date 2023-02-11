@@ -19,7 +19,7 @@ app.use(
 
 app.use(
   cors({
-    origin: "https://betoayza.github.io/",
+    origin: "https://betoayza.github.io", // origin is only domain
   })
 ); // enable CORS
 
